@@ -40,7 +40,7 @@
 		extern void stdimpl_print(const char *string);
 	#else
 		#include<stdio.h>
-		#define stdimpl_print printf
+		#define stdimpl_print(x) printf("%s", x)
 	#endif
 
 	#define ASSERT_STRING_BUFFER_MAX	64
