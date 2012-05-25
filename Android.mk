@@ -19,6 +19,8 @@ LOCAL_C_INCLUDES := \
 
 LOCAL_MODULE_TAGS := tests
 
+LOCAL_CFLAGS := -fno-strict-aliasing
+
 LOCAL_MODULE := libembunit
 
 include $(BUILD_SHARED_LIBRARY)
